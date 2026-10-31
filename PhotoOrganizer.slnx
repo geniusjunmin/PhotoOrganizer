@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="PhotoOrganizer/PhotoOrganizer.csproj" />
+  <Project Path="PhotoOrganizer.Tests/PhotoOrganizer.Tests.csproj" />
+</Solution>

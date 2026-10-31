@@ -1,0 +1,7 @@
+**/bin/
+**/obj/
+.build/
+artifacts/
+发行版/
+**/.vs/
+**/*.user

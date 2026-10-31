@@ -1,0 +1,21 @@
+Photo Organizer · Help and privacy
+
+Photo organization, metadata reading, verification and history processing run locally on your PC. The app requires no account and includes no advertising, telemetry or photo-upload service.
+
+Getting started
+Choose a source and archive folder, select the scope and naming rule, and scan. Review the date sources and destinations, select files, then confirm the operation. Copying preserves originals. Renaming changes original file names and requires a separate confirmation.
+
+Dates and formats
+Supported photos are JPG, JPEG and PNG. The app tries EXIF capture, digitized and modified dates in that order, then uses the filesystem modified date. MP4 and MOV are opt-in and use the filesystem modified date. Fallback dates are labeled. Renaming skips common companion-file groups.
+
+Undo and recovery
+Select rows in history, preview undo destinations and conflicts, then confirm. Renaming restores original names. Copy undo moves archived copies into .photo-organizer-withdrawn inside the archive. It does not permanently delete photos. Edited or replaced files and occupied original names are preserved and reported.
+After interruption, recover unfinished tasks from history. Recovery acts only when file identity, hash and paths match the durable record. Stopping selected recovery preserves every file.
+
+Local data
+Settings and SQLite history are stored in PhotoOrganizer under your current user's local application-data folder. History contains paths, timestamps, file identities and verification hashes for recovery and undo. Staging files live in .photo-organizer-staging inside the archive.
+Exporting complete history to a JSON file is an explicit action and includes file paths. Diagnostics contain app/runtime versions, OS build, language and theme. They exclude photos, absolute paths and user identifiers.
+Clearing history removes the corresponding automatic undo information. Originals, archives and withdrawn files are retained. Windows controls app-data retention on uninstall, so export any history you need before uninstalling.
+
+Usage
+Maintain an independent backup of important photos. Recovery entries with insufficient evidence need manual review. The app provides no photo editing, similar-photo deletion or cloud sync.

@@ -1,0 +1,23 @@
+生成方式：内置 image_gen
+
+Use case: ui-mockup
+Asset type: High-fidelity target UI concept for a Windows 11 desktop photo organizer, based on an existing C# WinForms app development plan.
+Primary request: Generate ONE polished, implementable Chinese desktop application screenshot, landscape 16:10, high resolution. Show the main "整理预览" view with real usable controls. This is the proposed v1.0 product UI for review.
+Style: restrained Windows 11 Fluent-inspired native desktop productivity software, light theme, off-white window background, white content panels, thin neutral separators, modest corner radii, Segoe UI / Microsoft YaHei-style legible simplified Chinese typography, teal-blue accent used consistently for selection and the main action. Practical compact information density and generous enough row spacing for everyday users. Flat front-on screenshot, entire application window visible, no perspective, no device mockup, no outside marketing captions, no dashboard charts or decorative artwork.
+Composition: Windows title bar across top with tiny photo-folder app icon, app title "照片整理工具", and native minimize/maximize/close controls. Narrow 190px left navigation with "开始整理" highlighted, "操作历史", and bottom "设置", "帮助". Main area about 1430px wide.
+Main header "整理预览" with smaller subtitle "先核对文件名和归档位置，再开始整理".
+Below header, two adjacent compact directory cards: "来源目录" with "E:\DCIM\100MEDIA", folder icon and "更换"; "归档目录" with "D:\照片归档", folder icon and "更换".
+Next a slim settings toolbar with visible labels and values: "操作方式" segmented control "复制归档" selected and "原地改名" unselected; "扫描范围" dropdown "包含子目录"; "归档规则" dropdown "按年 / 月"; "命名规则" dropdown "日期 + 时间 + 设备". Small line showing format chips "JPG / JPEG" and "PNG" selected and "MP4 / MOV" unchecked.
+A subdued blue info strip with shield icon and exact short text "当前为预览，确认后将复制到归档目录".
+Filter tabs above table: "全部 128", "待整理 118", "日期回退 4", "重复跳过 3", "格式跳过 3". These counts are consistent: 118 regular +4 fallback +3 duplicates +3 unsupported=128. Search box on right "搜索文件名".
+Large clean table with 6 visible rows, checkboxes, small real landscape/travel photo thumbnails where appropriate, and columns "原文件", "归档后路径", "时间来源", "状态". Wide enough destination column, use two-line paths if needed. First row selected with very pale blue background.
+Rows:
+checked IMG_0421.JPG; 2024/05/20240506_142301_Canon_EOS_R6.jpg; green subtle pill "EXIF 拍摄时间"; status "待复制".
+checked IMG_0422.JPG; 2024/05/20240506_142301_Canon_EOS_R6_01.jpg; green subtle pill "EXIF 拍摄时间"; amber status "同秒编号".
+checked IMG_0423.JPG; 2024/05/20240506_143012_Canon_EOS_R6.jpg; "EXIF 拍摄时间"; "待复制".
+checked screenshot.png; 2024/05/20240507_091500_UnknownDevice.png; amber pill "文件修改时间"; amber status "日期待核对".
+unchecked IMG_0421_copy.JPG; show existing destination shortened; muted status "重复跳过".
+unchecked IMG_0901.HEIC; destination dash; time dash; muted status "格式暂不支持".
+Below table a small selected-file detail strip shows a larger landscape thumbnail and "IMG_0421.JPG", "拍摄时间 2024-05-06 14:23:01", "设备 Canon EOS R6", "文件大小 8.4 MB".
+Bottom fixed action bar: left "已选 122 项 · 预计占用 1.8 GB"; small secondary text "归档后可在操作历史中撤销"; right secondary button "重新预览", prominent filled teal-blue primary button "开始复制（122）".
+Constraints: UI language simplified Chinese. Exact main labels should be legible. Use realistic understated travel photo thumbnails. Native desktop controls and aligned text, no browser address bar, no cloud login, no AI functions, no purchase prompts. Must read as an actual desktop photo organization utility rather than a photo editor or a decorative portfolio.
